@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cyan-500: #95dbfe;
+  --yellow-300: #f6dd5c;
+  --cyan-100: #a1ffa8;
+  --cyan-300: #84d389;
+  --cyan-700: #1b1b31;
+  --red-100: #df5b4f;
+
+  --black: #000000;
+  --gray-500: #5e5e5e;
+  --gray-300: #a8a8a8;
+  --gray-100: #eaeaea;
+}
+
+body,input,p,select,textarea {
+  font: 500 1rem 'Roboto', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,h2,h3,h4,h5,h4 {
+  font: 18px Roboto 600, sans-serif;
+}

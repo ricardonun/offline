@@ -1,0 +1,44 @@
+.container {
+  background: var(--black);
+  //max-width: 1120px;
+  width: 100%;
+
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: calc(100vh - 10rem);
+
+  display: flex;
+  align-items: center;
+  background-image: url("/images/background-home.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.section {
+  color: var(--gray-100);
+  margin: 5rem 18rem;
+  padding: 0 2rem;
+
+  font-size: 2rem;
+
+  span {
+    color: var(--cyan-300);
+    font: 900 2rem "Roboto", sans-serif;
+  }
+
+  .lastSentence {
+    display: flex;
+    align-items: center;
+  }
+
+  span.p {
+    color: var(--gray-100);
+    font: 500 1.5rem "Roboto", sans-serif;
+    margin-right: 0.5rem;
+  }
+
+  span.secundSpan {
+    color: var(--cyan-500);
+    font-size: 2.5rem;
+  }
+}
