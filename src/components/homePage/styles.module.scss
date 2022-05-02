@@ -1,5 +1,5 @@
 .container {
-  background: var(--black);
+  // background: var(--black);
   //max-width: 1120px;
   width: 100%;
 
@@ -9,9 +9,7 @@
 
   display: flex;
   align-items: center;
-  background-image: url("/images/background-home.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
+
 }
 
 .section {

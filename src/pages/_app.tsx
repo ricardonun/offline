@@ -6,7 +6,6 @@ import Home from '../components/homePage'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-    <Header/>
     <Component {...pageProps} />
     </>
   )
