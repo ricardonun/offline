@@ -1,3 +1,4 @@
+import { ButtonSpeakWithOus } from "../buttonSpeakWithOus";
 import styles from "./styles.module.scss";
 
 export default function HomePage() {
@@ -11,6 +12,7 @@ export default function HomePage() {
           <span className={styles.p}>Fique tranquilo, resolver isso é </span>{" "}
           <span className={styles.secundSpan}> 2P</span>
         </div>
+        <ButtonSpeakWithOus/>
       </section>
     </main>
   );
