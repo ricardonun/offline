@@ -38,7 +38,7 @@ export function AboutPage() {
           competitivo, leads mais qualificados e com resulktados mais rápidos.
           <br />
           <br />
-          <span className={styles.impactSentence}>"Não trabalhe duro, trabalhe inteligente"</span>
+          <span className={styles.impactSentence}>&quot;Não trabalhe duro, trabalhe inteligente&quot;</span>
         </p>
       </section>
       <section className={styles.imgSectionAbout}>
