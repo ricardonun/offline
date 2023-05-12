@@ -1,0 +1,58 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  
+
+  background-origin: var(--cyan-300);
+}
+
+.sectionLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 2rem;
+
+  margin-left: 10rem;
+  div {
+    h1 {
+      span {
+        color: var(--red-100);
+        font-weight: bold;
+      }
+    }
+    hr {
+      width: 4rem;
+      margin: 1rem 0;
+
+      height: 0.4rem;
+      background-color: var(--cyan-300);
+
+      border: none;
+    }
+  }
+  div {
+    h2 {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+
+      span {
+        color: var(--red-100);
+        font-weight: bold;
+      }
+    }
+  }
+  .pros {
+    span {
+      color: var(--red-100);
+      font-weight: bolder;
+      font-weight: bolder;
+    }
+
+    p {
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+  }
+}

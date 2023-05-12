@@ -16,11 +16,21 @@ export default function Header() {
           <Link href="#inicio">
             <a>Inicio</a>
           </Link>
-          <a>Sobre</a>
-          <a>Nossos Serviços</a>
-          <a>Funil Orgânico</a>
-          <a>Funil Pago</a>
-          <a>Contato</a>
+          <Link href="#about">
+            <a>Sobre</a>
+          </Link>
+          <Link href="#OurService">
+            <a>Nossos Serviços</a>
+          </Link>
+          <Link href="#organic">
+            <a>Funil Orgânico</a>
+          </Link>
+          <Link href="#paid">
+            <a>Funil Pago</a>
+          </Link>
+          <Link href="#contact">
+            <a>Contato</a>
+          </Link>
         </nav>
         <FaPhoneSquareAlt color="95dbfe" className={styles.icons} />
         <FaFacebookSquare color="95dbfe" className={styles.icons} />

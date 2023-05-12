@@ -1,0 +1,61 @@
+.container {
+    padding: 5rem;
+  display: flex;
+  background-color: var(--gray-100);
+}
+
+.section {
+  max-width: 1120px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.img {
+  height: 480px;
+  width: 680px;
+}
+
+.divider {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 0.5rem;
+  width: 7rem;
+
+  background-color: var(--cyan-300);
+  border: none;
+}
+.title {
+  font-size: 3rem;
+}
+
+.span {
+  color: var(--red-100);
+  font-size: 2.2rem;
+}
+
+.pSpan{
+    color: var(--cyan-300);
+    font-weight: bold;
+}
+
+.impactSentence{
+    color: var(--red-100)
+}
+
+.imgSectionAbout{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btnAbout{
+    background-color: var(--red-100);
+    color: var(--gray-100);
+
+    height: 3rem;
+    width: 9rem;
+
+    border: none;
+}
