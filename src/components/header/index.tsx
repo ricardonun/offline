@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <header className={styles.headerContainer}>
       <div className={styles.headerContent}>
-        <img src="/images/LOGO.png" alt="Offline" />
+        <img src="/images/logoWhite.png" alt="Offline" />
         <nav>
           <Link href="#inicio">
             <a>Inicio</a>
@@ -32,12 +32,21 @@ export default function Header() {
             <a>Contato</a>
           </Link>
         </nav>
-        <FaPhoneSquareAlt color="95dbfe" className={styles.icons} />
-        <FaFacebookSquare color="95dbfe" className={styles.icons} />
-        <FaInstagramSquare color="95dbfe" className={styles.icons} />
+        <Link href="https://api.whatsapp.com/send/?phone=5511966673029">
+          <FaPhoneSquareAlt color="95dbfe" className={styles.icons} />
+        </Link>
+        <Link href="#facebook">
+          <FaFacebookSquare color="95dbfe" className={styles.icons} />
+        </Link>
+        <Link href="#instagram">
+          <FaInstagramSquare color="95dbfe" className={styles.icons} />
+        </Link>
+
         <div className={styles.whatsapp}>
           <FaWhatsapp />
-          <span>(11)96667-3029</span>
+          <Link href="https://api.whatsapp.com/send/?phone=5511966673029">
+            <span>(11)96667-3029</span>
+          </Link>
         </div>
       </div>
     </header>

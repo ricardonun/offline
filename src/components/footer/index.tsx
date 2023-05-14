@@ -1,18 +1,24 @@
 import {
   FaCaretRight,
-  FaFacebook,
   FaFacebookSquare,
-  FaInstagram,
   FaInstagramSquare,
   FaPhoneSquareAlt,
   FaWhatsapp,
+  FaWhatsappSquare,
 } from "react-icons/fa";
 import styles from "./styles.module.scss";
+import Image from "next/image";
 
 export default function Footer() {
   const styleIcon = { height: "5rem", width: "5rem", color: "#ffde50" };
+  const styleIconFooter = {
+    height: "3rem",
+    width: "3rem",
+    color: "#5affa4",
+    marginLeft: "2rem",
+  };
   return (
-    <main className={styles.main} id="contact">
+    <footer className={styles.main} id="contact">
       <section className={styles.selling}>
         <div className={styles.contacts}>
           <h1>QUER AUMENTAR SUAS VENDAS?</h1>
@@ -103,19 +109,27 @@ export default function Footer() {
             </p>
           </div>
           <div className={styles.logo}>
-            <img src="/images/logoWhite.png" alt="" />
+            <Image width="348" height="80" src="/images/logoWhite.png" alt="Offline" />
           </div>
-          <div>
-            <FaWhatsapp />
-            <FaInstagram />
-            <FaFacebook />
-            <FaPhoneSquareAlt />
+          <div className={styles.social}>
+            <div className={styles.icons}>
+              <FaWhatsappSquare
+                style={{
+                  height: "3rem",
+                  width: "3rem",
+                  color: "#5affa4",
+                  marginLeft: "0",
+                }}
+              />
+              <FaInstagramSquare style={styleIconFooter} />
+              <FaFacebookSquare style={styleIconFooter} />
+              <FaPhoneSquareAlt style={styleIconFooter} />
+            </div>
 
-            <div>
-              {" "}
+            <div className={styles.email}>
               <input type="email" placeholder="Cadestre seu e-mail" />
               <button>
-                <FaCaretRight />
+                <FaCaretRight style={{}} />
               </button>
             </div>
           </div>
@@ -124,6 +138,6 @@ export default function Footer() {
           &copy; Copyright @offlineagencia. Todos os direitos reservados
         </div>
       </section>
-    </main>
+    </footer>
   );
 }

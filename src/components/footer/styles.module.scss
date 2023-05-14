@@ -139,18 +139,12 @@
 .footer {
   width: 100%;
   background-color: #14142d;
-  padding: 1.6rem 12rem;
   color: white;
 
   .div {
     display: flex;
+    align-items: center;
     justify-content: center;
-  }
-
-  .copyright {
-    width: 100%;
-    background-color: #0f0f22;
-    padding: 0;
   }
 
   .mapSite {
@@ -165,18 +159,55 @@
     }
   }
 
-  .aboutUs{
+  .aboutUs {
     width: 12.5rem;
 
-    h3{
+    h3 {
       color: #68dcfe;
       margin-bottom: 1rem;
     }
   }
 
-  .logo{
+  .logo {
     padding: 1rem;
     margin: auto 0;
+  }
 
+  .social {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .icons {
+      display: flex;
+    }
+
+    .email {
+      margin-top: 2rem;
+      input {
+        width: 18rem;
+        height: 2rem;
+        border: none;
+      }
+
+      button {
+        border: none;
+        height: 2rem;
+        width: 2rem;
+
+        text-align: center;
+        text-decoration: none;
+
+        background-color: #ffde50;
+      }
+    }
+  }
+  .copyright {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2rem;
+    background-color: #0f0f22;
+    padding: 0.8rem;
   }
 }
