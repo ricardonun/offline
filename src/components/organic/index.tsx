@@ -36,7 +36,7 @@ export default function Organic() {
       </section>
 
       <section className={styles.sectionRight}>
-        <img src="/images/FunilVetor.png" alt="Funil Organico" />
+        {/* <img src="/images/FunilVetor.png" alt="Funil Organico" /> */}
       </section>
     </main>
   );

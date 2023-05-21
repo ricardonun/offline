@@ -5,7 +5,7 @@ export default function Paid() {
   return (
     <main className={styles.main} id="paid">
       <section className={styles.left}>
-        <img src="/images/funilpaid.png" alt="" />
+        {/* <img src="/images/funilpaid.png" alt="" /> */}
       </section>
       <section className={styles.right}>
         <h1>

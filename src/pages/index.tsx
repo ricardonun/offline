@@ -11,17 +11,21 @@ import Footer from "../components/footer";
 const Home: NextPage = () => {
   return (
     <>
-      <div className={styles.container} id="home">
+      <header className={styles.container} id="home">
         <Header />
         <HomePage />
-      </div>
-      <div>
-        <AboutPage />
-      </div>
-      <OurService />
-      <Organic />
-      <Paid/>
-      <Footer/>
+      </header>
+      <main className={styles.main}>
+        <div>
+          <AboutPage />
+        </div>
+        <OurService />
+        <Organic />
+        <Paid />
+      </main>
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 };

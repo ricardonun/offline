@@ -42,7 +42,7 @@ export function AboutPage() {
         </p>
       </section>
       <section className={styles.imgSectionAbout}>
-        <img className={styles.img} src="/images/about.png" alt="sobre" />
+        <Image width={500} height={500} className={styles.img} src="/images/vetores/OurService.svg" alt="sobre" />
         <button className={styles.btnAbout}>Agende seu horário</button>
       </section>
     </main>
