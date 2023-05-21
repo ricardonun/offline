@@ -50,7 +50,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div>
+        <div className={styles.or}>
           <h4>OU</h4>
         </div>
         <div className={styles.form}>

@@ -225,3 +225,19 @@
     justify-content: center;
   }
 }
+
+@media (max-width: 320px) {
+  .selling {
+    .or {
+      display: none;
+    }
+
+    .contacts .icons .divWhatsApp {
+      display: none;
+    }
+
+    .form {
+      display: none;
+    }
+  }
+}
