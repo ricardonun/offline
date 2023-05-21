@@ -1,11 +1,18 @@
 import { FaCaretRight } from "react-icons/fa";
 import styles from "./styles.module.scss";
+import Image from "next/image";
 
 export default function Paid() {
   return (
     <main className={styles.main} id="paid">
       <section className={styles.left}>
-        {/* <img src="/images/funilpaid.png" alt="" /> */}
+        <div></div>
+        <Image
+          width={300}
+          height={331}
+          src="/images/vetores/FunilPaid.svg"
+          alt="Funil Organico"
+        />
       </section>
       <section className={styles.right}>
         <h1>
@@ -18,7 +25,13 @@ export default function Paid() {
         </h2>
         <div className={styles.pros}>
           <p>
-            <span><FaCaretRight/>Pontos Fortes:</span> É a ferramenta <span className={styles.spanP}>OBRIGATÓRIA</span>{" "}
+            <span>
+              <FaCaretRight />
+              Pontos Fortes:
+            </span>{" "}
+            É a ferramenta <span className={styles.spanP}>
+              OBRIGATÓRIA
+            </span>{" "}
             para qualquer negócio de médio ou grande porte. Porduz resultados
             desde o curto prazo e alcança números esmagadoramente baixos de
             custo por aquisição. É a estatégia com o melhor custo benefício do
@@ -26,11 +39,14 @@ export default function Paid() {
             otimizada.
           </p>
           <p>
-            <span><FaCaretRight/>Pontos Fracos:</span> No começo, as campanhas atuam com
-            públicos frios e precisa queimar um saldo para que o algoritmo possa
-            compreender qual o público ideal. O tráfego pago manda as pessoas
-            para a rede selecionada., ou seja, também depende de um bom trabalho
-            orgânico{" "}
+            <span>
+              <FaCaretRight />
+              Pontos Fracos:
+            </span>{" "}
+            No começo, as campanhas atuam com públicos frios e precisa queimar
+            um saldo para que o algoritmo possa compreender qual o público
+            ideal. O tráfego pago manda as pessoas para a rede selecionada., ou
+            seja, também depende de um bom trabalho orgânico{" "}
           </p>
         </div>
       </section>

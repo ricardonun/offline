@@ -8,6 +8,7 @@ import {
 } from "react-icons/fa";
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Header() {
   const [activeMenu, setActiveMenu] = useState(false);
@@ -23,7 +24,7 @@ export default function Header() {
     <>
       <header className={styles.headerContainer}>
         <div className={styles.headerContent}>
-          <img src="/images/logoWhite.png" alt="Offline" />
+          <Image height={120} width={180} src="/images/vetores/OfflineWhite.svg" alt="Offline" />
           <div className={styles.menuBtn} onClick={handleMenuClick}>
             <FaBars style={{width:"3rem", height:"3rem"}}/>
           </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import styles from "./styles.module.scss";
 
 export function OurService() {
@@ -5,8 +6,19 @@ export function OurService() {
     <main className={styles.main} id="OurService">
       <section className={styles.section}>
         <div className={styles.left}>
-          {/* <img src="/images/CardVazi.png" alt="Card Trafico Organigo 1" /> */}
-          {/* <img src="/images/CardTOrg.png" alt="" /> */}
+          <Image
+            width={250}
+            height={350}
+            src="/images/vetores/CardVazi.svg"
+            alt="Tráfego Orgânico"
+          />
+          <Image
+            width={250}
+            height={350}
+            style={{ marginLeft: "1rem" }}
+            src="/images/vetores/CardTOrg.svg"
+            alt="Tráfego Orgânico"
+          />
         </div>
         <div className={styles.center}>
           <div>
@@ -16,12 +28,29 @@ export function OurService() {
             </h3>
           </div>
           <div className={styles.divImage}>
-            {/* <img src="/images/CardIV.png" alt="Card Indentidade vizual" />{" "} */}
-            {/* <img src="/images/CardAO.png" alt="Card Analise e otimizicao" /> */}
+            <Image
+              width={250}
+              height={350}
+              src="/images/vetores/CardIV.svg"
+              alt="Card Indentidade vizual"
+            />
+            <Image
+              width={250}
+              height={350}
+              style={{ marginLeft: "1rem" }}
+              src="/images/vetores/CardAO.svg"
+              alt="Card Analise e otimizicao"
+            />
           </div>
         </div>
         <div className={styles.right}>
-          {/* <img src="/images/CardTP.png" alt="Card Trafego Pago" /> */}
+          <Image
+            width={250}
+            height={350}
+            style={{ marginRight: "1rem" }}
+            src="/images/vetores/CardTP.svg"
+            alt="Tráfego Orgânico"
+          />
         </div>
       </section>
     </main>

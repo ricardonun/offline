@@ -3,7 +3,6 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  
 
   background-origin: var(--cyan-300);
 }
@@ -12,9 +11,9 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-right: 2rem;
+  width: 50%;
+  padding: 0 7rem;
 
-  margin-left: 10rem;
   div {
     h1 {
       span {
@@ -46,13 +45,36 @@
   .pros {
     span {
       color: var(--red-100);
-      font-weight: bolder;
-      font-weight: bolder;
+      font-weight: bold;
     }
 
     p {
       margin-top: 1rem;
       font-weight: bold;
     }
+  }
+}
+
+.sectionRight {
+  width: 50%;
+  height: 20.75rem;
+  background-color: #5affa4;
+  margin: 0;
+}
+
+
+@media (max-width: 990px) {
+  .main{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sectionLeft{
+    width: 100%;
+    padding: 0;
+  }
+
+  .sectionRight{
+    width: 100%;
   }
 }

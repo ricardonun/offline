@@ -1,5 +1,6 @@
 import { FaCaretRight } from "react-icons/fa";
 import styles from "./styles.module.scss";
+import Image from "next/image";
 
 export default function Organic() {
   return (
@@ -20,14 +21,21 @@ export default function Organic() {
         </div>
         <div className={styles.pros}>
           <p>
-            <span><FaCaretRight/>Pontos Fortes:</span>o público orgânico é quente e muitos mais
-            qualificado, as estratégias de marketing para quem já te segue, são
-            muito mais efetivas,
+            <span>
+              <FaCaretRight />
+              Pontos Fortes:
+            </span>
+            o público orgânico é quente e muitos mais qualificado, as
+            estratégias de marketing para quem já te segue, são muito mais
+            efetivas,
             <br /> pois as pessoas JÁ CONHECEM a marca.{" "}
           </p>
 
           <p>
-            <span><FaCaretRight/>Pontos Fracos:</span>
+            <span>
+              <FaCaretRight />
+              Pontos Fracos:
+            </span>
             Embora seja a estratégia obrigatório para qualquer negócio, demora
             muito para dar retorno. Essa forma de marketing serve para Branding,
             marketing de relacionamento, conteúdo e fidelização.
@@ -36,7 +44,14 @@ export default function Organic() {
       </section>
 
       <section className={styles.sectionRight}>
-        {/* <img src="/images/FunilVetor.png" alt="Funil Organico" /> */}
+        <div>
+          <Image
+            width={300}
+            height={331}
+            src="/images/vetores/FunilOrganic.svg"
+            alt="Funil Organico"
+          />
+        </div>
       </section>
     </main>
   );

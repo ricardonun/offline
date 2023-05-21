@@ -1,5 +1,5 @@
 .container {
-    padding: 5rem;
+  padding: 5rem;
   display: flex;
   background-color: #ffffff;
 }
@@ -28,6 +28,17 @@
 }
 .title {
   font-size: 3rem;
+  display: flex;
+  flex-direction: column;
+
+  h4 {
+    display: flex;
+    align-items: center;
+
+    span{
+      margin-left: 0.8rem;
+    }
+  }
 }
 
 .span {
@@ -35,27 +46,55 @@
   font-size: 2.2rem;
 }
 
-.pSpan{
-    color: var(--cyan-300);
-    font-weight: bold;
+.pSpan {
+  color: var(--cyan-300);
+  font-weight: bold;
 }
 
-.impactSentence{
-    color: var(--red-100)
+.impactSentence {
+  color: var(--red-100);
 }
 
-.imgSectionAbout{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+.imgSectionAbout {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.btnAbout{
-    background-color: var(--red-100);
-    color: var(--gray-100);
+.btnAbout {
+  background-color: var(--red-100);
+  color: var(--gray-100);
 
-    height: 3rem;
-    width: 9rem;
+  height: 3rem;
+  width: 9rem;
 
-    border: none;
+  border: none;
+}
+
+
+@media (max-width: 990px){
+  .title{
+    h4{
+      font-size: 1.5rem;
+
+      span{
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  .paragraf{
+    font-size: 1rem;
+  }
+}
+
+
+@media (max-width:425px){
+  .container{
+    padding: 0;
+  }
+
+  .imgSectionAbout{
+    display: none;
+  }
 }
